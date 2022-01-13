@@ -1,0 +1,85 @@
+$primary: #da2f47;
+$secondary: #6c757d;
+$ternary: #fefbf8;
+$white: #ffffff;
+$black: #000000;
+
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'ternary': $ternary,
+  'white': $white,
+  'black': $black,
+);
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'ternary': $ternary,
+  'white': $white,
+  'black': $black,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1200px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1140px,
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  3: $spacer,
+  5: $spacer * 3,
+);
+
+$border-width: 1px;
+$border-widths: (
+  3: 3px,
+);
+
+$font-sizes: (
+  1: 1rem,
+);
+$display-font-sizes: (
+  1: 3.5rem,
+);
+
+$position-values: (
+  0: 0,
+);
+
+$body-bg: $white;
+$body-color: $black;
+$input-btn-focus-width: 0px;
+$variable-prefix: 'pv-';
+
+// $badge-font-size: 0.75em;
+// $table-variants: false;
+// $aspect-ratios: false;
+
+// Flags
+$enable-caret: false;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-cssgrid: false;
+// $enable-transitions: false;
+// $enable-reduced-motion: false;
+// $enable-smooth-scroll: false;
+$enable-validation-icons: false;
+$enable-negative-margins: false;
+// $enable-important-utilities: false;
+
+// Configuration
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';

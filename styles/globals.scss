@@ -1,0 +1,131 @@
+@import 'bootstrap';
+
+@import 'nprogress';
+
+* {
+  box-sizing: border-box;
+  // user-select: none;
+  &:focus {
+    outline: 1px dotted $primary;
+    &:not(:focus-visible) {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: 1px dotted $primary;
+    }
+  }
+}
+
+html,
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+.position-wrap {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.d-md {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hover {
+  &:hover {
+    filter: invert(0.08);
+    &:active {
+      filter: invert(0.8);
+    }
+  }
+}
+
+// Typography
+.h1 {
+  @extend h1;
+}
+.h2 {
+  @extend h2;
+}
+.h3 {
+  @extend h3;
+}
+.h4 {
+  @extend h4;
+}
+.h5 {
+  @extend h5;
+}
+.h6 {
+  @extend h6;
+}
+.lead {
+  @include font-size($lead-font-size);
+  font-weight: $lead-font-weight;
+}
+.small {
+  @extend small;
+}
+.mark {
+  @extend mark;
+}
+
+// .list-unstyled {
+//   @include list-unstyled();
+// }
+
+.list-set {
+  & > details {
+    border-bottom: $border-width solid rgba($black, 0.125);
+    &:first-of-type {
+      border-top: 0;
+    }
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    & > summary {
+      padding: $spacer * 0.5 $spacer;
+      cursor: pointer;
+      &:hover {
+        z-index: 1;
+      }
+    }
+    &:not([open]) > summary:hover {
+      background-color: $gray-100;
+    }
+    &[open] > summary {
+      color: shade-color($primary, 10%);
+      background-color: tint-color($primary, 90%);
+    }
+  }
+  & > *:not(details) {
+    display: block;
+    width: 100%;
+    // border-top: $border-width solid rgba($black, 0.125);
+    border-bottom: $border-width solid rgba($black, 0.125);
+    padding: $spacer * 0.5 $spacer;
+    color: inherit;
+    background: transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      z-index: 1;
+      background-color: $gray-100;
+    }
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}

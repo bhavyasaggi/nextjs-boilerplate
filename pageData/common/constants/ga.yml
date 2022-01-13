@@ -1,0 +1,10 @@
+actionUserClick: USER_CLICK
+actionConsoleError: CONSOLE_ERROR
+
+categoryClickGlobal: CLICK_GLOBAL
+categoryClickInput: CLICK_INPUT
+categoryClickButton: CLICK_BUTTON
+categoryClickHref: CLICK_HREF
+categoryErrorGlobal: ERROR_GLOBAL
+
+labelNA: NA

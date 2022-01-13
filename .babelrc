@@ -1,0 +1,7 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "lodash",
+    ["transform-remove-console", { "exclude": ["error", "warn", "debug"] }]
+  ]
+}

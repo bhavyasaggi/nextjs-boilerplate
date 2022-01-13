@@ -1,0 +1,42 @@
+@import 'variables';
+
+// @import '~bootstrap/scss/bootstrap';
+
+// scss-docs-start import-stack
+// Layout
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+
+// Components
+// @import '~bootstrap/scss/placeholders';
+@import '~bootstrap/scss/buttons';
+// @import '~bootstrap/scss/breadcrumb';
+@import '~bootstrap/scss/badge';
+
+// Forms
+@import '~bootstrap/scss/forms/labels';
+@import '~bootstrap/scss/forms/form-text';
+@import '~bootstrap/scss/forms/form-control';
+@import '~bootstrap/scss/forms/form-select';
+@import '~bootstrap/scss/forms/form-check';
+// @import '~bootstrap/scss/forms/form-range';
+@import '~bootstrap/scss/forms/floating-labels';
+// @import '~bootstrap/scss/forms/input-group';
+@import '~bootstrap/scss/forms/validation';
+
+// Helpers
+// @import '~bootstrap/scss/helpers/clearfix';
+// @import '~bootstrap/scss/helpers/ratio';
+
+// Utilities
+// Come v6, we'll de-dupe these variables.
+$utilities-colors: $theme-colors-rgb;
+$utilities-text: $utilities-colors;
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, '$key', 'text');
+$utilities-bg: $utilities-colors;
+$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, '$key', 'bg');
+@import 'utilities';
+@import '~bootstrap/scss/utilities/api';
+// scss-docs-end import-stack

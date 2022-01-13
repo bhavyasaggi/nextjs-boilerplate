@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+
+@keyframes spin-attn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes timer-drop {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.alertElement {
+  position: relative;
+  display: flex;
+  left: 0;
+  right: 0;
+  min-height: 48px;
+  margin: 4px;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: monospace;
+  background-color: $secondary;
+  color: $white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: spin-attn 0.8s linear var(--timeout-delay) infinite;
+  &[data-dismiss='TRUE']:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: timer-drop var(--timeout) linear 0s 1 normal forwards;
+  }
+}
+
+.alertClose {
+  margin-left: 8px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+}

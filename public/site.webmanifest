@@ -1,0 +1,9 @@
+{
+  "name": "NextJS Boilerplate",
+  "short_name": "NextJS Boilerplate",
+  "start_url": "/",
+  "theme_color": "#da2f47",
+  "background_color": "#fefbf8",
+  "display": "standalone",
+  "orientation": "portrait"
+}

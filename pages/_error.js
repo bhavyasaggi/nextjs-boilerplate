@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import * as Sentry from '@sentry/nextjs'
 
-import errorAction from '../utils/errorAction'
+import errorAction from '../pageProvider/Error/Boundary/errorAction'
 
 const RootError = ({ statusCode, hasGetInitialPropsRun, err }) => {
   if (!hasGetInitialPropsRun && err) {

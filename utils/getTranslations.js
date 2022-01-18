@@ -3,10 +3,10 @@ const defaultLocale = 'en'
 
 const getDefaultExport = ({ default: defaultExport }) => defaultExport
 const getLocale = (path, locale) =>
-  import(`../pageData/${path}/locale/${locale}.yml`)
+  import(`../pageData/${path}/locales/${locale}.yml`)
     .then(getDefaultExport)
     .catch(() =>
-      import(`../pageData/${path}/locale/${defaultLocale}.yml`).then(
+      import(`../pageData/${path}/locales/${defaultLocale}.yml`).then(
         getDefaultExport
       )
     )

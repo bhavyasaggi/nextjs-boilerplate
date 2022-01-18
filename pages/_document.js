@@ -19,7 +19,6 @@ class RootDocument extends Document {
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='theme-color' content='#da2f47' />
-          <link rel='shortcut icon' href='/favicon.ico' />
           <link rel='manifest' href='/site.webmanifest' />
         </Head>
         <body>

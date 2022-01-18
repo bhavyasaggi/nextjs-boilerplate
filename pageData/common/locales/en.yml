@@ -1,0 +1,27 @@
+title: Welcome
+description: >-
+  Hello World.
+
+aboutTitle: About Us
+about: >-
+  A free and secure platform for your needs by keeping your files secure by not
+  uploading anything to a secondary location. No Installation is necessary as
+  all processing happens in your browser only, through the magic of JavaScript.
+  Works for Windows, Mac, Linux, & all Mobile environments.
+
+gdpr: >-
+  This website uses cookies to provide necessary functionality, improve your
+  experience and analyze our traffic. By using our website, you agree to our
+  Privacy Policy.
+gdprAccept: I Agree
+poweredTitle: Powered By
+languageTitle: Language
+
+credits: © 2022 - All right reserved
+
+quickLinksTitle: Quick Links
+quickLinks:
+  - href: /privacy-policy
+    label: Privacy Policy
+
+seoLinksTitle: Important Links

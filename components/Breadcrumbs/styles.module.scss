@@ -1,0 +1,18 @@
+$breadcrumb-padding: 2px;
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumbItem {
+  & + & {
+    padding-left: $breadcrumb-padding;
+    &:before {
+      content: '/';
+      float: left;
+      padding-right: $breadcrumb-padding;
+    }
+  }
+}

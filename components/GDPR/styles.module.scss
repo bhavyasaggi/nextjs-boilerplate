@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.gdpr {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: $zindex-fixed;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.2s ease-in-out;
+  &.active {
+    transform: scaleY(1);
+  }
+}

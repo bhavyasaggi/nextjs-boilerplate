@@ -37,7 +37,7 @@ const securityHeaders = [
   },
   // {
   //   key: 'Content-Security-Policy',
-  //   value: `Content-Security-Policy: default-src 'self'; script-src 'self' 'report-sample' https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.js https://www.googletagmanager.com/gtag/js; style-src 'self' 'report-sample'; img-src 'self' data: blob: https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; font-src 'self' https://fonts.gstatic.com; connect-src 'self' blob: https://photon.komoot.io; media-src 'self'; object-src 'none'; frame-src 'self'; worker-src 'self' blob:; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self'`,
+  //   value: ``,
   // },
 ]
 
@@ -48,6 +48,7 @@ const svgLoaderOptions = {
   svgo: true,
   svgoConfig: {
     removeDimensions: true,
+    removeViewBox: false,
   },
   svgProps: {
     focusable: 'false',

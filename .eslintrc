@@ -12,6 +12,7 @@
   "ignorePatterns": ["node_modules/*", ".next/*", "out/*"],
   "extends": [
     "eslint:recommended",
+    // "plugin:jsdoc/recommended",
     "plugin:json/recommended",
     "plugin:import/recommended",
     "plugin:react/recommended",
@@ -24,8 +25,17 @@
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["prettier"],
+  "plugins": [
+    // "jsdoc",
+    "prettier"
+  ],
   "rules": {
+    // "jsdoc/check-tag-names": [
+    //   "error",
+    //   {
+    //     "definedTags": ["optional", "category", "subcategory", "component"]
+    //   }
+    // ],
     "prettier/prettier": [
       "error",
       {
@@ -47,7 +57,7 @@
     "react/react-in-jsx-scope": "off",
     // NextJs specific fix: allow jsx syntax in js files
     "react/jsx-filename-extension": [
-      1,
+      "error",
       {
         "extensions": [".js", ".jsx"]
       }

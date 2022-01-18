@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+
+$animation-duration: 0.16s;
+$animation-timing: linear;
+
+$sidebar-width: min(100%, 400px);
+$scroller-width: 3px;
+
+@keyframes sidebar {
+  0% {
+    transform: translateX($sidebar-width);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes aside {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.aside {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: $zindex-offcanvas-backdrop;
+  animation: aside $animation-duration $animation-timing;
+}
+
+.offCanvas {
+  height: 100%;
+  width: $sidebar-width;
+  z-index: $zindex-offcanvas;
+  animation: sidebar $animation-duration $animation-timing;
+}
+
+.offBody {
+  overflow: hidden auto;
+  &::-webkit-scrollbar {
+    width: $scroller-width;
+    height: $scroller-width;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: #eeeeee;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar-thumb:vertical {
+    height: $scroller-width;
+    background-color: #aaaaaa;
+    border-radius: 0;
+  }
+}
